@@ -1,217 +1,144 @@
 * {
-  box-sizing: border-box; /*мы выключаем растягивание дочернего элемента до ширины родителя*/
-  margin: 10px auto 0; /*поля снаружи блоков ставим посередине? сверху 10 пикселей, снизу 0*/
-  padding: 0; /*поля внутри блоков*/
-  overflow: hidden; /*это если текст вдруг вылезет, чтобы не вылезал*/
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html,
 body {
-  font-family:"Verdana"; /*устанавливаем шрифт для всего документа*/
-  color: #ffffff; /*устанавливаем цвет шрифта для всего документа*/
-  background-color: #BDE1FF; /*устанавливаем цвет фона*/
-  text-align:  center; /*устанавливаем выравнивание текста по центру*/
-  width: max-content; /*чтобы ширина сайта сохранялась*/
-  height: max-content; /*чтобы ширина сайта сохранялась*/
+  font-family: "Georgia", sans-serif;
+  height: 100%;
+  background: linear-gradient(303deg, #6E6DC1 0%, #DC8D8D 84.39%);
+  scrollbar-color: #458245 #714826; /* «цвет ползунка» «цвет полосы скроллбара» */
+  scrollbar-width: auto;  /* толщина */c
 }
 
-.container{ /*это будут контейнеры-блоки, наследуют предыдущий стиль*/
-  max-width: 1200px;  /*максимальная ширина контейнера-блока*/
-  align-items: start;
+.content{
+  width: 1800px;
+  height: 800px;
+  border-radius: 50px;
+  background:linear-gradient(303deg, #A7A4D7 0%, #eec5c5 84.39%);
+  margin: 50px;
+  position:relative;
+  padding: 50px
 }
 
-.header {
-    min-width: 799px;
-    min-height: 199px;
-    background: linear-gradient(269deg, rgba(1, 8, 108, 0.26) 0%, #000668 99.48%);
-
+.glavnaya{
+  width: 1400px;
+  height: 700px;
+  border-radius: 50px;
+  background:linear-gradient(303deg, #ecc1cc 0%, #ddd9e8.39%);
+  position:relative;
+  float: right;
+  padding: 100px;
 }
 
-.h1 {
-  padding: 10px 0;
-  width: 685px;
-  height: 92px;
-  color: #FFF;
-  text-align: center;
-  font-family: Verdana;
-  font-size: 36px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
+.menu{
+  width: 280px;
+  height: 700px;
+  position:relative;
+  float: left;
+  overflow-y: auto;
 }
-
-.h5 {
-  padding: 20px 0;
-  width: 409px;
-  height: 36px;
-  color: #DADADA;
-  text-align: center;
-  font-family: Verdana;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-button {
+.button {
   outline: none;
   text-decoration: none;
   cursor: pointer;
   padding: 0;
-  background-color: #BDE1FF;
+  background-color: transparent;
   display: flex run-in;
+  float: right;
+  margin: 10px;
 
-  width: 300px;
-  height: 100px;
+  width: 200px;
+  height: 70px;
   border-radius: 70px;
-  border: 3px solid #0F1774;
-
-  color: #0F1774;
+  
   text-align: center;
-  font-family: Verdana;
-  font-size:  24px;
+  font-family: Georgia;
+  font-size:  18px;
   font-style: normal;
   line-height: 0,5;
 
   transition: background-color 0.4s, color 0.4s; 
-
 }
 
-.button:hover {
-  background-color: #0F1774;
+ .button.a{
+  color: #5C59CE;
+  border: 3px solid #5C59CE;
+ }
+
+ .button.a:hover {
+  background-color: #5C59CE;;
   color: #ffffff;
   display : block;
  }
+ .button.b{
+  color: #6F6DC2;
+  border: 3px solid #6F6DC2;
+ }
 
-.button.two {
-  border: solid 3px #170F74;
-  color: #170F74;
-}
-
-.button.two:hover {
-  background-color: #170F74;
+ .button.b:hover {
+  background-color: #6F6DC2;
   color: #ffffff;
+  display : block;
+ }
+ .button.c{
+  color: #8172B9;
+  border: 3px solid #8172B9;
  }
 
-.button.three {
-  border: solid 3px #2F0F74;
-  color: #2F0F74;
-}
-
-.button.three:hover {
-  background-color: #2F0F74;
+ .button.c:hover {
+  background-color: #8172B9;
   color: #ffffff;
+  display : block;
+ }
+ .button.d{
+  color: #9578B0;
+  border: 3px solid #9578B0;
  }
 
-.button.four {
- 
-  width: 191px;
-  height: 90px;
-}
+ .button.d:hover {
+  background-color: #9578B0;
+  display : block;
+ }
+ .button.e{
+  color: #A07CAA;
+  border: 3px solid #A07CAA;
+ }
 
-.button.five {
-  width: 191px;
-  height: 90px;
-  border: solid 3px #170F74;
-  color: #170F74;
-}echo
-
-.button.five:hover {
-  background-color: #170F74;
+ .button.e:hover {
+  background-color: #A07CAA;
   color: #ffffff;
+  display : block;
+ }
+ .button.f{
+  color: #AD7FA4;
+  border: 3px solid #AD7FA4;
  }
 
-.button.six {
- 
-  width: 191px;
-  height: 90px;
-  font-size:  20px;
-  border: solid 3px #2F0F74;
-  color: #2F0F74;
-}
-
-.button.six:hover {
-  background-color: #2F0F74;
+ .button.f:hover {
+  background-color: #AD7FA4;
   color: #ffffff;
+  display : block;
+ }
+ .button.g{
+  color: #BB849D;
+  border: 3px solid #BB849D;
  }
 
-.button.seven {
- 
-  width: 191px;
-  height: 90px;
-  font-size:  20px;
-  border: solid 3px #4E0F74;
-  color: #4E0F74;
-}
-
-.button.seven:hover {
-  background-color: #4E0F74;
+ .button.g:hover {
+  background-color:#BB849D;
   color: #ffffff;
+  display : block;
+ }
+ .button.h{
+  color: #f37c7c;
+  border: 3px solid #f37c7c;
  }
 
- .form{
-  color: #0F1774;
-  text-align: left;
-  font-family: Verdana;
-  font-size:  14px;
-  font-style: normal;
-  line-height: 0,5;
-
-  display: none; /*Скрыть элемент*/
- }
- textarea{
-  border: none;
-  color: #0F1774;
-  font-family: Verdana;
-  font-size: 16px;
-  font-style: normal;
-  line-height: normal;
- }
- textarea:focus, input:focus{
-  outline: none;
-  background-color: #f4f4f5
-  }
-  .rezult{
-    display: none;
-  }
-.footer {
-  color: #0F1774;
-  color: #000668;
-  font-style: normal;
-  line-height: normal;
-  margin: 100px auto 0; 
-  }
-
-.ok{
-  
-  display: flex;
-
-  width: 150px;
-  height: 50px;
-  border-radius: 70px;
-  border: 2px solid #600f74;
-
-  color: #600f74;
-  text-align: center;
-  font-family: Verdana;
-  font-size:  16px;
-  font-style: normal;
-  line-height: 0,5;
-
-  transition: background-color 0.4s, color 0.4s;
-
-}
-.ok:hover {
-  background-color: #600f74;
+ .button.h:hover {
+  background-color: #f37c7c;
   color: #ffffff;
+  display : block;
  }
-
- h3{
-  
-  color: #170F74;
-  text-align: center;
-  font-family: Verdana;
-  font-size:  16px;
-  font-style: normal;
- }
-

@@ -1,58 +1,31 @@
+
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spisok literaturi gost</title>
-    <link rel="stylesheet" href="./style.css" />
-    <script src="script.js"></script>
-  </head>
-  <body>
-    <header class="container header">
-    <h5  class ="h5">Выберите категорию и заполните нужные поля</h5>
-    <h1 class ="h1">Оформите список литературы по ГОСТ!</h1>
-    </header>
-    <div class="form">
-    <h4>Введите главного автора. Например, Иванов И.И</h4>
-    <textarea name="comment" cols="100" rows="1"></textarea>
-      <h4>Введите второго автора или не пишите ничего. Например, Иванов И.И.</h4>
-      <textarea name="comment" cols="100" rows="1"></textarea>
-        <h4>Введите третьего автора или не пишите ничего. Например, Иванов И.И.</h4>
-        <textarea name="comment" cols="100" rows="1"></textarea>
-          <h4>Введите название статьи. Например, Образы Италии</h4>
-          <textarea name="comment" cols="100" rows="1"></textarea>
-            <h4>Введите название журнала. Например, Томский вестник</h4>
-            <textarea name="comment" cols="100" rows="1"></textarea>
-              <h4>Введите номер журнала. Например Т16, №10</h4>
-              <textarea name="comment" cols="100" rows="1"></textarea>
-                <h4>Укажите год издания</h4>
-                <textarea name="comment" cols="100" rows="1"></textarea>
-                  <h4>Напишите номера страниц, на которых размещена статья. Например 21 или 22-158</h4>
-                  <textarea name="comment" cols="100" rows="1"></textarea>
-                  <button class="ok"><span>Подтвердить</span></button>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spisuk liyeratyr</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+    <div class = "content">
+      <div class = "glavnaya">
+         <h1 class ="h1">Оформите список литературы по ГОСТ!</h1>
+         <h5>Выберите категорию и заполните нужные поля</h5>
+      </div>
+      <div class = "menu">
+        <button class="button a"><span class="spans">Электронный ресурс</span></button>
+          <button class="button b"><span class="spans">Монография</span></button>
+            <button class="button c"><span class="spans"> Обзор</span></button>
+              <button class="button d"><span class="spans">Патент</span></button>
+                <button class="button e"><span class="spans">Материал конф.</span></button>
+                  <button class="button f"><span class="spans"> Учебник</span></button>
+                    <button class="button g"><span class="spans">Учебное пособие</span></button>
+                      <button class="button h"><span class="spans">Словарь</span></button>
+                         <button class="button i"><span class="spans">Автореферат</span></button>
+                            <button class="button j"><span class="spans">Диссертация</span></button>
+      </div>
     </div>
-    <div class = "git"> 
-      <h3>Результат</h3>
-      <button class="ok"><span>Свернуть</span></button>
-    </div>
-    <p class="container">
-      <button class="button" onclick="document.location='zurnalnaya_statya'"><span>Журнальная статья</span></button>
-      <button class="button two"><span>Электронный ресурс</span></button>
-      <button class="button three"><span>Монография</span></button>
-    </p>
-    <p class="container">
-      <button class="button four"><span class="spans">Автореферат</span></button>
-      <button class="button five"><span class="spans">Диссертация</span></button>
-      <button class="button six"><span class="spans"> Обзор</span></button>
-      <button class="button seven"><span class="spans">Патент</span></button>
-    </p>
-    <p class="container">
-      <button class="button four"><span class="spans">Материал конф.</span></button>
-      <button class="button five"><span class="spans"> Учебник</span></button>
-      <button class="button six"><span class="spans">Учебное пособие</span></button>
-      <button class="button seven"><span class="spans">Словарь</span></button>
-    </p>
-    <footer class="footer">Варкентин Ю.А., 2023 г.</footer>
-    
-  </body>
-</html> 
+
+</body>
+</html>
