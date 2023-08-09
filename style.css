@@ -8,16 +8,15 @@ html,
 body {
   font-family: "Georgia", sans-serif;
   height: 100%;
-  background: linear-gradient(303deg, #6E6DC1 0%, #DC8D8D 84.39%);
-  scrollbar-color: #458245 #714826; /* «цвет ползунка» «цвет полосы скроллбара» */
-  scrollbar-width: auto;  /* толщина */c
+  background: linear-gradient(89deg, #1D898F 0%, #3E7CB3 31.77%, #726FB0 79.17%);
+
 }
 
 .content{
   width: 1800px;
   height: 800px;
   border-radius: 50px;
-  background:linear-gradient(303deg, #A7A4D7 0%, #eec5c5 84.39%);
+  background:linear-gradient(89deg, #74B3BC 0%, #94A9CE 31.77%, #94A9CE 79.17%);
   margin: 50px;
   position:relative;
   padding: 50px
@@ -27,11 +26,31 @@ body {
   width: 1400px;
   height: 700px;
   border-radius: 50px;
-  background:linear-gradient(303deg, #ecc1cc 0%, #ddd9e8.39%);
+  background:linear-gradient(89deg, #edfeff 0%, #d7eafa 31.77%, #e4e3fa 79.17%);
   position:relative;
   float: right;
   padding: 100px;
 }
+
+
+.h{
+  margin: 30px;
+  color: #533eb3;
+  font-family: Georgia;
+  font-style: bold;
+  font-weight: 400;
+  line-height: bold;
+  
+}
+
+.book{
+  position:absolute;
+	left:700px;
+	top:30px;
+}
+
+
+
 
 .menu{
   width: 280px;
@@ -53,92 +72,113 @@ body {
   width: 200px;
   height: 70px;
   border-radius: 70px;
+  background-color: #ffffffd0;
   
   text-align: center;
   font-family: Georgia;
   font-size:  18px;
-  font-style: normal;
+  font-style: bold;
   line-height: 0,5;
 
   transition: background-color 0.4s, color 0.4s; 
 }
 
  .button.a{
-  color: #5C59CE;
-  border: 3px solid #5C59CE;
+  color: #1D898F;
+  border: 3px solid #1D898F;
  }
 
  .button.a:hover {
-  background-color: #5C59CE;;
+  background-color: #1D898F;
   color: #ffffff;
   display : block;
  }
  .button.b{
-  color: #6F6DC2;
-  border: 3px solid #6F6DC2;
+  color: #008da6;
+  border: 3px solid #008da6;
  }
 
  .button.b:hover {
-  background-color: #6F6DC2;
+  background-color: #008da6;
   color: #ffffff;
   display : block;
  }
  .button.c{
-  color: #8172B9;
-  border: 3px solid #8172B9;
+  color: #0085A6;
+  border: 3px solid #0085A6;
  }
 
  .button.c:hover {
-  background-color: #8172B9;
+  background-color: #0085A6;
   color: #ffffff;
   display : block;
  }
  .button.d{
-  color: #9578B0;
-  border: 3px solid #9578B0;
+  color: #3e88b3;
+  border: 3px solid #3e88b3;
  }
 
  .button.d:hover {
-  background-color: #9578B0;
+  background-color: #3e88b3;
+  color: #ffffff;
   display : block;
  }
  .button.e{
-  color: #A07CAA;
-  border: 3px solid #A07CAA;
+  color: #3E7CB3;
+  border: 3px solid #3E7CB3;
  }
 
  .button.e:hover {
-  background-color: #A07CAA;
+  background-color: #3E7CB3;
   color: #ffffff;
   display : block;
  }
  .button.f{
-  color: #AD7FA4;
-  border: 3px solid #AD7FA4;
+  color:#3e67b3;
+  border: 3px solid #3e67b3;
  }
 
  .button.f:hover {
-  background-color: #AD7FA4;
+  background-color: #3e67b3;
   color: #ffffff;
   display : block;
  }
  .button.g{
-  color: #BB849D;
-  border: 3px solid #BB849D;
+  color: #403eb3;
+  border: 3px solid #403eb3;
  }
-
  .button.g:hover {
-  background-color:#BB849D;
+  background-color: #403eb3;
   color: #ffffff;
   display : block;
  }
  .button.h{
-  color: #f37c7c;
-  border: 3px solid #f37c7c;
+  color: #533eb3;
+  border: 3px solid #533eb3;
  }
 
  .button.h:hover {
-  background-color: #f37c7c;
+  background-color: #533eb3;
+  color: #ffffff;
+  display : block;
+ }
+ .button.i{
+  color: #713eb3;
+  border: 3px solid #713eb3;
+ }
+
+ .button.i:hover {
+  background-color: #713eb3;
+  color: #ffffff;
+  display : block;
+ }
+ .button.j{
+  color: #923eb3;
+  border: 3px solid #923eb3;
+ }
+
+ .button.j:hover {
+  background-color: #923eb3;
   color: #ffffff;
   display : block;
  }
