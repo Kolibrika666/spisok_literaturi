@@ -1,5 +1,5 @@
 * {
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   margin: 0;
   padding: 0;
 }
@@ -12,24 +12,38 @@ body {
 
 }
 
+body::-webkit-scrollbar {
+  width: 15px; /* Ширина всего элемента навигации */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(248, 197, 255); /* Цвет дорожки */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #9c5e9aff; /* Цвет бегунка */
+  border-radius: 20px; /* Округление бегунка */
+}
+
 .content{
   width: 1800px;
   height: 800px;
   border-radius: 50px;
   background:linear-gradient(89deg, #74B3BC 0%, #94A9CE 31.77%, #94A9CE 79.17%);
-  margin: 50px;
+  margin: 30px;
   position:relative;
-  padding: 50px
+  padding: 30px;
 }
 
 .glavnaya{
-  width: 1400px;
-  height: 700px;
+  width: 1200px;
+  height: 600px;
   border-radius: 50px;
   background:linear-gradient(89deg, #edfeff 0%, #d7eafa 31.77%, #e4e3fa 79.17%);
   position:relative;
   float: right;
   padding: 100px;
+  display : block;
 }
 
 
@@ -45,20 +59,43 @@ body {
 
 .book{
   position:absolute;
-	left:700px;
+	left:600px;
 	top:30px;
+  width:700px;
 }
 
+.arrow{
+  position:absolute;
+	left:100px;
+	top:500px;
+}
 
 
 
 .menu{
-  width: 280px;
-  height: 700px;
-  position:relative;
-  float: left;
+  width: 350px;
+  height: 750px;
+  position: relative;
   overflow-y: auto;
+  padding: 20px;
 }
+
+.menu::-webkit-scrollbar {
+  width: 15px; /* Ширина всего элемента навигации */
+}
+
+.menu::-webkit-scrollbar-track {
+  background: hsl(183, 100%, 96%); /* Цвет дорожки */
+}
+
+.menu::-webkit-scrollbar-thumb {
+  background-color: #25a396ff; /* Цвет бегунка */
+  border-radius: 20px; /* Округление бегунка */
+}
+
+
+
+
 .button {
   outline: none;
   text-decoration: none;
@@ -66,17 +103,16 @@ body {
   padding: 0;
   background-color: transparent;
   display: flex run-in;
-  float: right;
   margin: 10px;
 
-  width: 200px;
-  height: 70px;
+  width: 300px;
+  height: 90px;
   border-radius: 70px;
   background-color: #ffffffd0;
   
   text-align: center;
   font-family: Georgia;
-  font-size:  18px;
+  font-size:  24px;
   font-style: bold;
   line-height: 0,5;
 
@@ -181,4 +217,14 @@ body {
   background-color: #923eb3;
   color: #ffffff;
   display : block;
+ }
+
+ .section a{
+  width: 1400px;
+  height: 700px;
+  border-radius: 50px;
+  background:linear-gradient(89deg, #edfeff 0%, #d7eafa 31.77%, #e4e3fa 79.17%);
+  position: relative;
+  float: right;
+  padding: 100px;
  }
