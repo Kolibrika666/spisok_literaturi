@@ -17,11 +17,11 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-  background: rgb(248, 197, 255); /* Цвет дорожки */
+  background: rgb(210, 197, 255); /* Цвет дорожки */
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #9c5e9aff; /* Цвет бегунка */
+  background-color: #3e336b; /* Цвет бегунка */
   border-radius: 20px; /* Округление бегунка */
 }
 
@@ -47,14 +47,24 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-.h{
-  margin: 30px;
+.h1{
+  
+  color: #533eb3;
+  font-family: Georgia;
+  font-style: bold;
+  font-weight: 600;
+  line-height: 2;
+  font-size: 52px;
+  
+}
+
+.h2{
+ margin-top: 100px;
   color: #533eb3;
   font-family: Georgia;
   font-style: bold;
   font-weight: 400;
   line-height: bold;
-  
 }
 
 .book{
@@ -64,12 +74,21 @@ body::-webkit-scrollbar-thumb {
   width:700px;
 }
 
-.arrow{
-  position:absolute;
-	left:100px;
-	top:500px;
+.arrow_konteiner{
+  margin-top: 50px;
+  width: 300px;
+  height: 150px;
+  position: relative;
+  padding-left: 100px;
 }
-
+.arrow{
+  width: 200px;
+  height:150px;
+  right: 0;
+  position: relative;
+  cursor: pointer;
+  transition: right 3s cubic-bezier(0.0, 0.5, 0.5, 1.0);
+}
 
 
 .menu{

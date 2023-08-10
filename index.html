@@ -8,10 +8,11 @@
   <meta name = "description" content = "sozdahie spiska literaturi">
   <meta name = "keyword" content = "book, litera, list">
 
-
   <title>Spisuk liyeratyr</title>
-  <link rel="stylesheet" href="./style.css" />
 
+  <link rel="stylesheet" href="./style.css" />
+  <script src="script.js"></script>
+  
   <!-- Обязательный (и достаточный) тег для браузеров -->
 	<link type="image/x-icon" rel="shortcut icon" href="favicon/favicon.ico">
 
@@ -27,9 +28,12 @@
     <div class = "content">
       <div class = "glavnaya" id="glava">
         <img class = "book" src="image/g18659.svg">
-         <h1 class ="h">Оформите список литературы по ГОСТ!</h1>
-         <h2 class ="h">Выберите категорию и заполните нужные поля  </h2>
-         <img class = "arrow" src="image/arrow.svg">
+         <h1 class ="h1">Оформите <p></p> список литературы <p></p> по ГОСТ!</h1>
+           <div class = arrow_konteiner id = animation_arrow>
+             <img class="arrow" src="image/arrow2.svg"  onmouseover="this.style.right='150px'">
+           </div>
+         <h2 class ="h2">Выберите категорию и заполните нужные поля  </h2>
+         
 
          <!-- <div class = "section a"> -->
          <!-- форма для ответов -->
@@ -37,7 +41,7 @@
 
       </div>
       <div class = "menu">
-        <button class="button a" id ="button a"><span>Электронный ресурс</span></button>
+        <button class="button a" id ="myBtn" type="button"  onclick="return push(blosk);"><span>Электронный ресурс</span></button>
           <button class="button b"><span >Монография</span></button>
             <button class="button c"><span > Обзор</span></button>
               <button class="button d"><span >Патент</span></button>
