@@ -1,60 +1,43 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name = "autor" contetnt ="Kolibrika">
-  <meta name = "description" content = "sozdahie spiska literaturi">
-  <meta name = "keyword" content = "book, litera, list">
-
-  <title>Spisuk liyeratyr</title>
-
-  <link rel="stylesheet" href="./style.css" />
-  <script src="script.js"></script>
-  
-  <!-- Обязательный (и достаточный) тег для браузеров -->
-	<link type="image/x-icon" rel="shortcut icon" href="favicon/favicon.ico">
-
-	<!-- Дополнительные иконки для десктопных браузеров -->
-	<link type="image/png" sizes="16x16" rel="icon" href="favicon/icons/favicon-16x16.png">
-	<link type="image/png" sizes="32x32" rel="icon" href="favicon/icons/favicon-32x32.png">
-	<link type="image/png" sizes="96x96" rel="icon" href="favicon/icons/favicon-96x96.png">
-	<link type="image/png" sizes="120x120" rel="icon" href="favicon/icons/favicon-120x120.png">
-
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name = "autor" content = "Varkentin Julia">
+    <meta name = "description" content = "Registration of the Bibliographys in accordance with the standard">
+    <meta name = "keyword" content = "Bibliography, Standard, literature, Scientific work">
+    <title>Bibliography</title>
+    <link rel="stylesheet" href = "global.css">
 </head>
 <body>
-    <div class = "content">
-      <div class = "glavnaya" id="glava">
-        <img class = "book" src="image/g18659.svg">
-         <h1 class ="h1">Оформите <p></p> список литературы <p></p> по ГОСТ!</h1>
-           <div class = arrow_konteiner id = animation_arrow>
-             <img class="arrow" src="image/arrow2.svg"  onmouseover="this.style.right='150px'">
-           </div>
-         <h2 class ="h2">Выберите категорию и заполните нужные поля  </h2>
-         
-
-         <!-- <div class = "section a"> -->
-         <!-- форма для ответов -->
-         <!-- </div> -->
-
-      </div>
-      <div class = "menu">
-        <button class="button a" id ="myBtn" type="button"  onclick="return push(blosk);"><span>Электронный ресурс</span></button>
-          <button class="button b"><span >Монография</span></button>
-            <button class="button c"><span > Обзор</span></button>
-              <button class="button d"><span >Патент</span></button>
-                <button class="button e"><span>Материал конф.</span></button>
-                  <button class="button f"><span> Учебник</span></button>
-                    <button class="button g"><span>Учебное пособие</span></button>
-                      <button class="button h"><span>Словарь</span></button>
-                         <button class="button i"><span >Автореферат</span></button>
-                            <button class="button j"><span>Диссертация</span></button>
-      
-      </div>
-      
-    </div>
-
+    <main>
+        <section>
+            <nav>
+                <button>Интернет-источник</button>
+                <button> Журнальные статья</button>
+                <button>Монография</button>
+                <button>Монография</button>
+                <button>Учебник</button>
+                <button>Учебное пособие</button>
+                <button>Диссертация</button>
+                <button>Обзор</button>
+                <button>Патент</button>
+                <button>Материал конференции</button>
+                <button>Словарь</button>
+            </nav>
+            <article>
+                <h1>Оформите список литературы по ГОСТ!</h1>
+                <ol>
+                    <li>Выберите категорию литературы</li><br>
+                    <li> Заполните поля формы</li><br>
+                    <li>Скопируйте полученную строку</li><br>
+                </ol>
+            
+                <picture>
+                </picture>
+                <data>2023</data>
+            </article>
+        </section>
+    </main>
 </body>
 </html>
